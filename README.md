@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# Game-Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- Introduction
+- Screenshots
+- Quick Start
+- Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Introduction
+This application is inspired by rawg website using its api to fetch data and demonstrating the concepts learned in mosh's react:18 bundle
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Screenshot
+
+### Home Page
+![Web capture_14-1-2024_1556_localhost](https://github.com/Marwan-Alghandour/Game-Hub/assets/73784274/5a4366ac-f902-472a-b466-032d209d32ea)
+
+### Game Page
+![Web capture_14-1-2024_151324_localhost](https://github.com/Marwan-Alghandour/Game-Hub/assets/73784274/6a7f023e-b6fc-4df9-8afb-08ff6136fa1d)
+
+
+## Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Run the client in development environment
+npm run dev
+
+#Client runs on http://localhost:5173/
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technologies Used
+
+- React Hooks
+- react-router-dom
+- chakra
+- axios
+- zustand
+- @tanstack/react-query
